@@ -1,0 +1,17 @@
+# Table of contents
+
+* [Overview](index.md)
+* [Quickstart](quickstart.md)
+* [HTTP API](http.md)
+* [SDKs](sdk/index.md)
+  * [Python](sdk/python.md)
+  * [JavaScript / TypeScript](sdk/javascript.md)
+  * [Go](sdk/go.md)
+  * [Rust](sdk/rust.md)
+  * [Ruby](sdk/ruby.md)
+  * [PHP](sdk/php.md)
+  * [Dart / Flutter](sdk/dart.md)
+  * [Elixir](sdk/elixir.md)
+  * [.NET](sdk/dotnet.md)
+  * [Java / Kotlin](sdk/java.md)
+* [MCP server (Claude, Cursor, Gemini CLI)](integrations/mcp.md)

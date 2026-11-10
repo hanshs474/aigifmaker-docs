@@ -19,12 +19,16 @@ That block goes in Claude Desktop's `claude_desktop_config.json`, Cursor's `.cur
 - Claude Code: `claude mcp add aigifmaker -e AIGIFMAKER_API_KEY=sk-... -- npx -y aigifmaker-mcp`
 - Gemini CLI: `gemini extensions install https://github.com/hanshs474/aigifmaker-mcp`
 - Claude Code plugin: `claude plugin marketplace add hanshs474/aigifmaker-mcp`, then `claude plugin install aigifmaker@aigifmaker`
+- Remote, no install: `https://aigifmaker.ai/api/mcp` (Streamable HTTP). Send `Authorization: Bearer sk-...` with each request. Claude Code: `claude mcp add --transport http aigifmaker https://aigifmaker.ai/api/mcp --header "Authorization: Bearer sk-..."`
 
 Create the key at https://aigifmaker.ai/settings/apikeys.
 
 | Tool | What it does |
 |---|---|
 | `generate_gif` | Text prompt in, animated GIF URL out. Waits for the GIF (usually about a minute) |
+| `check_gif` | Collects a GIF that was still running or queued when `generate_gif` returned, by its task id. Free to call |
 | `check_credits` | Credits left on your account, free to call |
+
+The npm package and the remote endpoint expose the same three tools.
 
 Each GIF costs 1 credit on your AI GIF Maker account, the same as on the website. New accounts get one free GIF (it carries a small aigifmaker.ai badge).
