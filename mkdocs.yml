@@ -18,5 +18,6 @@ nav:
   - .NET: sdk/dotnet.md
   - Java / Kotlin: sdk/java.md
   - MCP server (Claude, Cursor, Gemini CLI): integrations/mcp.md
+  - LangChain tool (Python): integrations/langchain.md
 exclude_docs: |
   SUMMARY.md
